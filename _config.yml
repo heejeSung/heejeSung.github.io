@@ -3,13 +3,13 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   https://heejeSung.github.io
+hosturl: https://heejeSung.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-baseurl:               '/'
+#baseurl:               '/'
 
 
 # General settings
@@ -25,13 +25,14 @@ title:                 Why? Think Space
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  개인 공부 공간
+  고민하는 공부 공간
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               고민하는 공부 공간
+
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [backend,frontend ,computer science, database]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -48,31 +49,112 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
   - title:             About
     url:               /about/
+
+  - title:             Backend
+    url:               /backend/
+    submenu:
+      - title:         Java
+        url:           /backend/java/
+      - title:         JSP
+        url:           /backend/jsp/
+      - title:         Spring
+        url:           /backend/spring/
+      - title:         Spring boot
+        url:           /backend/spring-boot/
+      - title:         Spring Security
+        url:           /backend/spring-Security/
+      - title:         Spring Batch
+        url:           /backend/spring-batch/
+      - title:         Python
+        url:           /backend/python/
+
+  - title:             Frontend
+    url:               /frontend/
+    submenu:
+      - title:         JavaScript
+        url:           /frontend/java-script/
+      - title:         JQuery
+        url:           /frontend/jquery/
+      - title:         AJAX
+        url:           /frontend/ajax/
+      - title:         ReactJS
+        url:           /frontend/reactjs/
+      - title:         VueJS
+        url:           /frontend/vuejs/
+
+  - title:             Database
+    url:               /db/
+    submenu:
+      - title:         Oracle
+        url:           /db/oracle/
+      - title:         Mysql
+        url:           /db/mysql/
+      - title:         H2
+        url:           /db/h2/
+      - title:         Mybatis
+        url:           /db/mybatis/
+      - title:         JPA
+        url:           /db/jpa/
+
+  - title:             Computer Science
+    url:               /cs/
+    submenu:
+      - title:         Data Structure
+        url:           /cs/data-structure/
+      - title:         Algoriwm
+        url:           /cs/algorism/
+      - title:         Operating System
+        url:           /cs/operating-system/
+
+  - title:             Cloud
+    url:               /cloud/
+    submenu:
+      - title:         AWS
+        url:           /cloud/aws/
+
+  - title:             SCM
+    url:               /scm/
+    submenu:
+      - title:         Git
+        url:           /scm/git/
+      - title:         SVN
+        url:           /scm/svn/
+
+  - title:             CI/CD
+    url:               /cicd/
+    submenu:
+      - title:         Docker
+        url:           /cicd/docker/
+      - title:         Jelkins
+        url:           /cicd/jelkins/
+
+  - title:             Etc
+    url:               /etc/
+    submenu:
+      - title:         IntelliJ
+        url:           /etc//intellij/
+      - title:         Think
+        url:           /etc//think/
+      - title:         Temp
+        url:           /etc//temp/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
   - title:             LICENSE
     url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2022. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              10
+paginate:              5
 paginate_path:         /:num/
 
 
@@ -163,6 +245,7 @@ kramdown:
   math_engine_opts:    {}
   footnote_backlink:   '&#x21a9;&#xfe0e;'
 
+favicon: /assets/icons/favicon.ico
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
